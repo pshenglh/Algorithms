@@ -1,41 +1,37 @@
 import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.StdRandom;
 
 /**
  * Created by pshen on 2017/7/4.
  */
-public class Merge {
-    private static Comparable[] aux;
-
+public class Qiuck
+{
     public static void sort(Comparable[] a)
     {
-        aux = new Comparable[a.length];
-        sort(a, 0, a.length - 1);
+        StdRandom.shuffle(a);
+        sort(a, 0, a.length-1);
     }
-
     private static void sort(Comparable[] a, int lo, int hi)
     {
         if (hi <= lo) return;
-        int mid = lo + (hi - lo) / 2;
-        sort(a, lo, mid);
-        sort(a, mid+1, hi);
-        merge(a, lo, mid, hi);
+        int j = partition(a, lo, hi);
+        sort(a, lo, j-1);
+        sort(a, j+1, hi);
     }
-
-    public static void merge(Comparable[] a, int lo, int mid, int hi)
+    private static int partition(Comparable[] a, int lo, int hi)
     {
-        int i = lo, j = mid + 1;
-
-        for (int k = 0; k <= hi; k++)
-            aux[k] = a[k];
-
-        for (int k = lo; k <= hi; k++)
+        int i = lo, j = hi + 1;
+        Comparable v = a[lo];
+        while (true)
         {
-            if (i > mid) a[k] = aux[j++];
-            else if (j > hi)  a[k] = aux[i++];
-            else if (less(aux[j], aux[i])) a[k] = aux[j++];
-            else a[k] = aux[i++];
+            while (less(a[++i], v)) if (i == hi) break;
+            while (less(v, a[--j])) if (j == lo) break;
+            if (i >= j) break;
+            exch(a, i, j);
         }
+        exch(a, lo, j);
+        return j;
     }
 
     private static boolean less(Comparable v, Comparable w)
