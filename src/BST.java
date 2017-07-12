@@ -164,6 +164,7 @@ public class BST<Key extends Comparable<Key>, Value> {
 
         private void keys(Node x, Queue<Key> queue, Key lo, Key hi)
         {
+
             if (x == null) return;
             int cmplo = lo.compareTo(x.key);
             int cmphi = hi.compareTo(x.key);
