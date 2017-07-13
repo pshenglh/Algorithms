@@ -42,7 +42,7 @@ public class Graph {
     { return E; }
 
     public Iterable<Integer> adj(int v)
-    { return adj[v]; }  `       `
+    { return adj[v]; }
 
     public String toString()
     {
