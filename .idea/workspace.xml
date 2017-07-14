@@ -4,6 +4,7 @@
     <list default="true" id="c09f9ed4-79ad-4686-bc9c-a983b066a65c" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BreadthFirstPaths.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CC.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Algorithms/DepthFirstPaths.class" afterPath="$PROJECT_DIR$/out/production/Algorithms/DepthFirstPaths.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DepthFirstPaths.java" afterPath="$PROJECT_DIR$/src/DepthFirstPaths.java" />
@@ -27,16 +28,6 @@
               <folding>
                 <element signature="imports" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LinearProbingHashST.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LinearProbingHashST.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -76,18 +67,32 @@
       <file leaf-file-name="DepthFirstPaths.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DepthFirstPaths.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
-              <caret line="61" column="9" lean-forward="false" selection-start-line="45" selection-start-column="4" selection-end-line="61" selection-end-column="9" />
-              <folding />
+            <state relative-caret-position="222">
+              <caret line="53" column="48" lean-forward="true" selection-start-line="53" selection-start-column="48" selection-end-line="53" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BreadthFirstPaths.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CC.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/CC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="47" column="42" lean-forward="true" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BreadthFirstPaths.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BreadthFirstPaths.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="52" column="45" lean-forward="false" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#479#488#0" expanded="true" />
@@ -167,6 +172,7 @@
         <option value="$PROJECT_DIR$/src/Stack.java" />
         <option value="$PROJECT_DIR$/src/DepthFirstPaths.java" />
         <option value="$PROJECT_DIR$/src/BreadthFirstPaths.java" />
+        <option value="$PROJECT_DIR$/src/CC.java" />
       </list>
     </option>
   </component>
@@ -381,28 +387,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BreadthFirstPaths">
+  <component name="RunManager" selected="Application.CC">
     <configuration default="false" name="Queue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Queue" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Algorithms" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="Qiuck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Qiuck" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="tiny.txt" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -447,6 +438,21 @@
       <option name="MAIN_CLASS_NAME" value="BreadthFirstPaths" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="tinyCG.txt 0" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Algorithms" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="CC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="CC" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="tinyG.txt" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -846,18 +852,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Queue" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Qiuck" />
-      <item index="2" class="java.lang.String" itemvalue="Application.SortCompare" />
-      <item index="3" class="java.lang.String" itemvalue="Application.DepthFirstPaths" />
-      <item index="4" class="java.lang.String" itemvalue="Application.BreadthFirstPaths" />
+      <item index="1" class="java.lang.String" itemvalue="Application.SortCompare" />
+      <item index="2" class="java.lang.String" itemvalue="Application.DepthFirstPaths" />
+      <item index="3" class="java.lang.String" itemvalue="Application.BreadthFirstPaths" />
+      <item index="4" class="java.lang.String" itemvalue="Application.CC" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.BreadthFirstPaths" />
-        <item index="1" class="java.lang.String" itemvalue="Application.DepthFirstPaths" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Queue" />
-        <item index="3" class="java.lang.String" itemvalue="Application.SortCompare" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Qiuck" />
+        <item index="0" class="java.lang.String" itemvalue="Application.CC" />
+        <item index="1" class="java.lang.String" itemvalue="Application.BreadthFirstPaths" />
+        <item index="2" class="java.lang.String" itemvalue="Application.DepthFirstPaths" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Queue" />
+        <item index="4" class="java.lang.String" itemvalue="Application.SortCompare" />
       </list>
     </recent_temporary>
   </component>
@@ -888,15 +894,16 @@
       <workItem from="1499821559586" duration="8874000" />
       <workItem from="1499926557808" duration="8799000" />
       <workItem from="1499994399012" duration="2240000" />
-      <workItem from="1500007975567" duration="2530000" />
+      <workItem from="1500007975567" duration="5323000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69012000" />
+    <option name="totallyTimeSpent" value="71805000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -907,8 +914,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295082" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295082" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -972,13 +979,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/MaxPQ.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BinarySearch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
@@ -1345,20 +1345,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DepthFirstPaths.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="61" column="9" lean-forward="false" selection-start-line="45" selection-start-column="4" selection-end-line="61" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="222">
+          <caret line="53" column="48" lean-forward="true" selection-start-line="53" selection-start-column="48" selection-end-line="53" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BreadthFirstPaths.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="52" column="45" lean-forward="false" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#479#488#0" expanded="true" />
             <element signature="e#1047#1056#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="47" column="42" lean-forward="true" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
