@@ -22,7 +22,7 @@ public class Digraph
     public Digraph(In in)
     {
         this(in.readInt());
-        this.E = in.readInt();
+        int E = in.readInt();
         for (int i = 0; i < E; i++)
         {
             int v = in.readInt();
@@ -54,13 +54,13 @@ public class Digraph
 
     public String toString()
     {
-        String s = " ";
+        String s = "";
         for (int i = 0; i < V; i++)
         {
             s += i + ": ";
             for (int w : adj(i))
                 s += w + " ";
-            StdOut.println();
+            s += "\n";
         }
         return s;
     }
