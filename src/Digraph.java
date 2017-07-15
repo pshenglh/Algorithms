@@ -41,7 +41,7 @@ public class Digraph
     }
 
     public Iterable<Integer> adj(int v)
-    { return adj(v); }
+    { return adj[v]; }
 
     public Digraph reverse()
     {

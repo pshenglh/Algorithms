@@ -17,7 +17,7 @@ public class DirectedCycle
             if (!marked[v]) dfs(G, v);
     }
 
-    public void dfs(Graph G, int v)
+    public void dfs(Digraph G, int v)
     {
         marked[v] = true;
         onStack[v] = true;

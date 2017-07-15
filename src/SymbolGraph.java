@@ -22,7 +22,6 @@ public class SymbolGraph {
                 if (!st.contains(a[i]))
                     st.put(a[i], st.size());
         }
-        StdOut.println(st.size());
 
         keys = new String[st.size()];
 
