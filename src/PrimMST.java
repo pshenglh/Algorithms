@@ -1,4 +1,6 @@
+import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.IndexMinPQ;
+import edu.princeton.cs.algs4.StdOut;
 
 /**
  * Created by pshen on 2017/7/16.
@@ -31,7 +33,7 @@ public class PrimMST
         for (Edge e : G.adj(v))
         {
             int w = e.other(v);
-            if (marked[w] continue;
+            if (marked[w]) continue;
             if (e.weight() < distTo[w])
             {
                 distTo[w] = e.weight();
@@ -40,5 +42,31 @@ public class PrimMST
                 else pq.insert(w, distTo[w]);
             }
         }
+    }
+
+    public Iterable<Edge> edges()
+    {
+        Queue<Edge> e = new Queue<>();
+        for (int i = 0; i < edgeTo.length; i++)
+            e.enqueue(edgeTo[i]);
+        return e;
+    }
+
+    public Double weight()
+    {
+        Double weight = 0.0;
+        for (int i = 0; i < distTo.length; i++)
+            weight += distTo[i];
+        return weight;
+    }
+
+    public static void main(String[] args)
+    {
+        In in = new In(args[0]);
+        EdgeWeightedGraph G = new EdgeWeightedGraph(in);
+        PrimMST mst = new PrimMST(G);
+        for (Edge e : mst.edges())
+            StdOut.println(e);
+        StdOut.println(mst.weight());
     }
 }

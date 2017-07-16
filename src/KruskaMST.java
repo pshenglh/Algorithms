@@ -1,49 +1,37 @@
 import edu.princeton.cs.algs4.In;
-import edu.princeton.cs.algs4.MSD;
 import edu.princeton.cs.algs4.MinPQ;
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Created by pshen on 2017/7/15.
+ * Created by pshen on 2017/7/16.
  */
-public class LazyPrimMST
+public class KruskaMST
 {
-    private boolean[] marked;
     private Queue<Edge> mst;
-    private MinPQ<Edge> pq;
 
-    public LazyPrimMST(EdgeWeightedGraph G)
+    public KruskaMST(EdgeWeightedGraph G)
     {
-        marked = new boolean[G.V()];
+        MinPQ<Edge> pq = new MinPQ<>();
         mst = new Queue<Edge>();
-        pq = new MinPQ<Edge>();
+        WeightedQuickUnionUF uf = new WeightedQuickUnionUF(G.V());
+        for (Edge e : G.edges()) pq.insert(e);
 
-        visit(G, 0);
         while (!pq.isEmpty())
         {
             Edge e = pq.delMin();
-
             int v = e.either(), w = e.other(v);
-            if (marked[v] && marked[w]) continue;
+            if (uf.connected(v, w)) continue;
+            uf.union(v, w);
             mst.enqueue(e);
-            if (marked[v]) visit(G, w);
-            if (marked[w]) visit(G, v);
         }
-    }
-
-    public void visit(EdgeWeightedGraph G, int v)
-    {
-        marked[v] = true;
-        for (Edge e : G.adj(v))
-            if (!marked[e.other(v)]) pq.insert(e);
     }
 
     public Iterable<Edge> edges()
     { return mst; }
     public double weight()
     {
-        double weight = 0.0;
-        for (Edge e : edges())
+        Double weight = 0.0;
+        for (Edge e : mst)
             weight += e.weight();
         return weight;
     }
@@ -52,7 +40,7 @@ public class LazyPrimMST
     {
         In in = new In(args[0]);
         EdgeWeightedGraph G = new EdgeWeightedGraph(in);
-        LazyPrimMST mst = new LazyPrimMST(G);
+        KruskaMST mst = new KruskaMST(G);
         for (Edge e : mst.mst)
             StdOut.println(e);
         StdOut.println(mst.weight());

@@ -1,3 +1,5 @@
+import edu.princeton.cs.algs4.In;
+
 /**
  * Created by pshen on 2017/7/15.
  */
