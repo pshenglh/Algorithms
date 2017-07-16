@@ -42,4 +42,7 @@ public class EdgeWeightedGraph {
                 if (e.other(i) > i) b.add(e);
         return b;
     }
+
+    public int V()
+    { return V; }
 }
