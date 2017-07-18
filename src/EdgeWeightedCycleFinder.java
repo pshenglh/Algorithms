@@ -47,4 +47,7 @@ public class EdgeWeightedCycleFinder
 
     public boolean hasCycle()
     { return cycle != null; }
+
+    public Iterable<Integer> cycle()
+    { return cycle; }
 }

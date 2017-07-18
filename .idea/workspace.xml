@@ -12,13 +12,14 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jobsPC.txt" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AcyclicLP.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AcyclicSP.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BellmanFordSP.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CPM.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/EdgeWeightDFO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/EdgeWeightedCycleFinder.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/EdgeWeightedTopological.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tinyEWDAC.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EdgeWeightDigraph.java" afterPath="$PROJECT_DIR$/src/EdgeWeightDigraph.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EdgeWeightedCycleFinder.java" afterPath="$PROJECT_DIR$/src/EdgeWeightedCycleFinder.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,7 +74,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CPM.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CPM.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CPM.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="222">
@@ -85,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tinyEWDAC.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tinyEWDAC.txt">
+      <file leaf-file-name="BellmanFordSP.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/BellmanFordSP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            <state relative-caret-position="108">
+              <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -108,8 +109,8 @@
       <file leaf-file-name="EdgeWeightedCycleFinder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/EdgeWeightedCycleFinder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="241">
+              <caret line="50" column="27" lean-forward="false" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -195,7 +196,6 @@
         <option value="$PROJECT_DIR$/src/DijkstraSP.java" />
         <option value="$PROJECT_DIR$/src/Topological.java" />
         <option value="$PROJECT_DIR$/src/EdgeWeightDFO.java" />
-        <option value="$PROJECT_DIR$/src/EdgeWeightedCycleFinder.java" />
         <option value="$PROJECT_DIR$/src/EdgeWeightedTopological.java" />
         <option value="$PROJECT_DIR$/src/AcyclicSP.java" />
         <option value="$PROJECT_DIR$/tinyEWDAC.txt" />
@@ -203,6 +203,8 @@
         <option value="$PROJECT_DIR$/jobsPC.txt" />
         <option value="$PROJECT_DIR$/src/AcyclicLP.java" />
         <option value="$PROJECT_DIR$/src/CPM.java" />
+        <option value="$PROJECT_DIR$/src/EdgeWeightedCycleFinder.java" />
+        <option value="$PROJECT_DIR$/src/BellmanFordSP.java" />
       </list>
     </option>
   </component>
@@ -931,15 +933,15 @@
       <workItem from="1500077706193" duration="25295000" />
       <workItem from="1500166428977" duration="11624000" />
       <workItem from="1500272587596" duration="13848000" />
-      <workItem from="1500342168145" duration="8131000" />
+      <workItem from="1500342168145" duration="11072000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140772000" />
+    <option name="totallyTimeSpent" value="143713000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1016,13 +1018,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Stopwatch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Shell.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -1354,22 +1349,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EdgeWeightedTopological.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EdgeWeightedCycleFinder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AcyclicSP.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
@@ -1421,6 +1400,30 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EdgeWeightedTopological.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EdgeWeightedCycleFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="50" column="27" lean-forward="false" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BellmanFordSP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
