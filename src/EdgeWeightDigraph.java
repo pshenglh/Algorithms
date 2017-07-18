@@ -13,6 +13,7 @@ public class EdgeWeightDigraph
     {
         this.V = V;
         this.E = 0;
+        adj = new Bag[V];
         for (int v = 0; v < V; v++)
             adj[v] = new Bag<DirectedEdge>();
     }
@@ -50,6 +51,7 @@ public class EdgeWeightDigraph
                 edges.add(e);
         return edges;
     }
+
 
     public int V()
     { return V; }
