@@ -1,3 +1,5 @@
+import edu.princeton.cs.algs4.StdOut;
+
 /**
  * Created by pshen on 2017/7/21.
  */
