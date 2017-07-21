@@ -21,7 +21,7 @@ public class BellmanFordSP
             distTo[v] = Double.POSITIVE_INFINITY;
         distTo[s] = 0.0;
         queue.enqueue(s);
-        onQ[s] = true;]
+        onQ[s] = true;
         while (!queue.isEmpty() && !hasNegativeCycle())
         {
             int v = queue.dequeue();
