@@ -13,11 +13,24 @@ public class KMP
         dfa[pat.charAt(0)][0] = 1;
         for (int X = 0, j = 1; j < M; j++)
         {
-            for (int c = 0; c < R; c++)
+            for (int c = 65; c < 68; c++) {
                 dfa[c][j] = dfa[c][X];
+                StdOut.printf("dfa[%c][%d] = dfa[%c][%d] = %d", c, j, c, X, dfa[c][j]);
+                StdOut.println();
+            }
             dfa[pat.charAt(j)][j] = j+1;
+            StdOut.printf("dfa[%c][%d] = %d", pat.charAt(j), j, j+1);
+            StdOut.println();
             X = dfa[pat.charAt(j)][X];
         }
+        StdOut.println("-----------------");
+        for (int i = 0; i < M; i++)
+            for (int c =65; c < 68; c++)
+            {
+                StdOut.printf("dfa[%c][%d] = %d", c, i, dfa[c][i]);
+                StdOut.println();
+            }
+
     }
     public int search(String txt)
     {
